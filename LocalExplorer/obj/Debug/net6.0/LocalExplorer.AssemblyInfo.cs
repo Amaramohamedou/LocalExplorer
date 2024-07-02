@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LocalExplorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+060a7baf62c7b9da90fba7f3374eb83574d6ef47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48437ecb1b6143dc724709a4a80447c065bdf355")]
 [assembly: System.Reflection.AssemblyProductAttribute("LocalExplorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LocalExplorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
