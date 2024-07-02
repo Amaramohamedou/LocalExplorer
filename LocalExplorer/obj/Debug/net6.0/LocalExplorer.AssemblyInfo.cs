@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b17ac258-38f2-4190-b72a-ecb057904efc")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("LocalExplorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+060a7baf62c7b9da90fba7f3374eb83574d6ef47")]
 [assembly: System.Reflection.AssemblyProductAttribute("LocalExplorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LocalExplorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
