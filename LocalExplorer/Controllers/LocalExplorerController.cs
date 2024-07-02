@@ -32,9 +32,10 @@ namespace LocalExplorer.Controllers
             string weatherText = weather.Current.Condition.Text;
             string localtime = weather.Location.Localtime;
             string tempC = weather.Current.TempC.ToString();
+            string icon = weather.Current.Condition.Icon;
             string status = "outdoor";
 
-            var suggestions = await _activitySuggestionService.GetActivitySuggestionsAsync(city, weatherText, localtime, tempC, status);
+            var suggestions = await _activitySuggestionService.GetActivitySuggestionsAsync(city, weatherText, localtime, icon, tempC, status);
 
             if (suggestions == null)
             {
@@ -44,6 +45,7 @@ namespace LocalExplorer.Controllers
                     city = city,
                     weather = weatherText,
                     localtime = localtime,
+                    icon = icon,
                     tempC = tempC,
                     status = status
                 });
@@ -55,6 +57,7 @@ namespace LocalExplorer.Controllers
                 city = city,
                 weather = weatherText,
                 localtime = localtime,
+                icon = icon,
                 tempC = tempC,
                 status = status
             });

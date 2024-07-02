@@ -1,73 +1,76 @@
 ﻿@page "/"
-@inject HttpClient HttpClient
-@using System.Text.Json
-@using LocalExplorer_front.Data
+    @inject HttpClient HttpClient
+    @using System.Text.Json
+    @using LocalExplorer_front.Data
 
 
-<PageTitle>Index</PageTitle>
+    <PageTitle>Index</PageTitle>
 
-@if (activitySuggestion == null)
-{
-    <p>Loading...</p>
-}
-else
-{
-    <div class="container">
-        <div class="weather-info">
-            <h1>@activitySuggestion.City Weather Information</h1>
-            <p>Current Weather: @activitySuggestion.Weather</p>
-            <div class="weather-icon">
-                <img src="https://img.freepik.com/vecteurs-premium/previsions-meteo-soleil-derriere-nuages-couvert_316839-4454.jpg" alt="Partly cloudy">
+    @if (activitySuggestion == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        <div class="container">
+            <div class="weather-info">
+                <h1>@activitySuggestion.City Weather Information</h1>
+                <p>Current Weather: @activitySuggestion.Weather</p>
+                <div class="weather-icon">
+                    <img src="@activitySuggestion.Icon" alt="Partly cloudy">
+                </div>
+                <p>Temperature: @activitySuggestion.TempC°C</p>
             </div>
-            <p>Temperature: @activitySuggestion.TempC°C</p>
-        </div>
-        <div class="activity-suggestions">
-            <h2>Activity Suggestions</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    @foreach (var choice in activitySuggestion.Suggestions.Choices)
-                    {
-                        @foreach (var line in SplitContent(choice.Message.Content))
+            <div class="activity-suggestions">
+                <h2>Activity Suggestions</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        @foreach (var choice in activitySuggestion.Suggestions.Choices)
                         {
-                            <div class="swiper-slide card">
-                                <div class="activity-image">
-                                    <img src="https://www.tracedirecte.com/media/original_images/tanger-maroc.jpg.1920x0_q85_format-jpg.jpg" alt="Activity Image">
+                            @foreach (var line in SplitContent(choice.Message.Content))
+                            {
+                                <div class="swiper-slide card">
+                                    <div class="activity-image">
+                                        <img src="https://www.tracedirecte.com/media/original_images/tanger-maroc.jpg.1920x0_q85_format-jpg.jpg" alt="Activity Image">
+                                    </div>
+
+                                    <p>@line</p>
+
                                 </div>
 
-                                <p>@line</p>
-
-                            </div>
-
+                            }
                         }
-                    }
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
+
         </div>
 
-    </div>
-
-}
+    }
 
 
-@code {
-    private ActivitySuggestion activitySuggestion;
+    @code {
+        private ActivitySuggestion activitySuggestion;
 
-    protected override async Task OnInitializedAsync()
-    {
-        var response = await HttpClient.GetAsync("https://localhost:7039/LocalExplorer/suggestions");
-        if (response.IsSuccessStatusCode)
+        protected override async Task OnInitializedAsync()
         {
-            var jsonString = await response.Content.ReadAsStringAsync();
-            activitySuggestion = JsonSerializer.Deserialize<ActivitySuggestion>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            var response = await HttpClient.GetAsync("https://localhost:7039/LocalExplorer/suggestions");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                activitySuggestion = JsonSerializer.Deserialize<ActivitySuggestion>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                activitySuggestion.Icon = activitySuggestion.Icon.Replace("\\\\", "");
+            }
+            else
+            {
+
+            }
         }
-        else
+        private List<string> SplitContent(string content)
         {
-
+            return content.Split(";", StringSplitOptions.RemoveEmptyEntries).Select(c => c.Trim()).ToList();
         }
     }
-    private List<string> SplitContent(string content)
-    {
-        return content.Split(";", StringSplitOptions.RemoveEmptyEntries).Select(c => c.Trim()).ToList();
-    }
-}
+
