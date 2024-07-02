@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/obj/Debug/net6.0/scopedcss/projectbundle/LocalExplorer_front.bundle.scp.css",
+      "PackagePath": "staticwebassets/LocalExplorer_front.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/open-iconic/FONT-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/open-iconic/ICON-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/open-iconic/README.md",
+      "PackagePath": "staticwebassets/css/open-iconic/README.md"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.eot"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.otf"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.svg"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.ttf"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/wwwroot/script.js",
+      "PackagePath": "staticwebassets/script.js"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.LocalExplorer_front.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.LocalExplorer_front.props",
+      "PackagePath": "build\\LocalExplorer_front.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.LocalExplorer_front.props",
+      "PackagePath": "buildMultiTargeting\\LocalExplorer_front.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.LocalExplorer_front.props",
+      "PackagePath": "buildTransitive\\LocalExplorer_front.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
