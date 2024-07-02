@@ -19,10 +19,8 @@ namespace LocalExplorer.Services
         {
             _httpClient = httpClient;
             _openAiApiKey = configuration["OpenAI:OpenAIKey"];
-            //_weatherApiKey = configuration["WeatherAPI:ApiKey"];
         }
-
-        private HttpRequestMessage CreateRequestMessage(string city, string weather, string localtime, string tempC, string status)
+        private HttpRequestMessage CreateRequestMessage(string city, string weather, string localtime, string Icon, string tempC, string status)
         {
             var requestBody = new
             {
@@ -58,11 +56,10 @@ namespace LocalExplorer.Services
 
             return requestMessage;
         }
-
-        public async Task<Suggestions> GetActivitySuggestionsAsync(string city, string weather, string localtime, string tempC, string status)
+        public async Task<Suggestions> GetActivitySuggestionsAsync(string city, string weather, string localtime, string Icon ,string tempC, string status)
         {
             int delay = 1000;
-            var requestMessage = CreateRequestMessage(city, weather, localtime, tempC, status);
+            var requestMessage = CreateRequestMessage(city, weather, localtime, Icon, tempC, status);
             var response = await _httpClient.SendAsync(requestMessage);
 
             while (response.StatusCode == (HttpStatusCode)429)
@@ -77,9 +74,6 @@ namespace LocalExplorer.Services
 
             return JsonConvert.DeserializeObject<Suggestions>(responseString);
         }
-
-
-
 
     }
 }

@@ -458,3 +458,7 @@
 /Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer/obj/Debug/net6.0/LocalExplorer.genruntimeconfig.cache
 /Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer/obj/Debug/net6.0/ref/LocalExplorer.dll
 /Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer/obj/Debug/net6.0/LocalExp.ABF5300B.Up2Date
+<<<<<<< HEAD
+=======
+/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer/obj/Debug/net6.0/LocalExplorer.sourcelink.json
+>>>>>>> main-modif-front-back

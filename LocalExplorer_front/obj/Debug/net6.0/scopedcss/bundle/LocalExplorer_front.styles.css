@@ -7,22 +7,23 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.weather-info[b-16q95izkof], .activity-suggestions[b-16q95izkof] {
-    background-color: #aae7c4;
+/* Weather Information */
+.weather-info[b-16q95izkof] {
+    background-color: #C1E1C1;
     padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    flex: 1;
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 300px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-    .weather-info h1[b-16q95izkof], .activity-suggestions h2[b-16q95izkof] {
+    .weather-info h1[b-16q95izkof] {
         font-size: 24px;
         margin-bottom: 10px;
     }
 
-    .weather-info p[b-16q95izkof], .activity-suggestions p[b-16q95izkof] {
+    .weather-info p[b-16q95izkof] {
         font-size: 18px;
     }
 
@@ -31,11 +32,39 @@
     height: 50px;
 }
 
+/* Activity Suggestions */
+.activity-suggestions[b-16q95izkof] {
+    flex: 1;
+    text-align: center;
+    background-color: #aae7c4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .activity-suggestions h2[b-16q95izkof] {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+/* Swiper Container */
 .swiper-container[b-16q95izkof] {
-    width: 300px;
+    width: 100%;
     height: 400px;
 }
 
+.swiper-wrapper[b-16q95izkof] {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.swiper-slide[b-16q95izkof] {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 10px;
+}
+
+/* Card */
 .card[b-16q95izkof] {
     background-color: #0080ff;
     color: white;
@@ -44,10 +73,11 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
     .card:nth-child(2)[b-16q95izkof] {
@@ -66,6 +96,7 @@
         background-color: #ff0080;
     }
 
+/* Activity Image */
 .activity-image img[b-16q95izkof] {
     width: 100%;
     height: auto;
