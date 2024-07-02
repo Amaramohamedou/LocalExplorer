@@ -30,3 +30,4 @@
 /Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/obj/Debug/net6.0/LocalExplorer_front.genruntimeconfig.cache
 /Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/obj/Debug/net6.0/ref/LocalExplorer_front.dll
 /Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/obj/Debug/net6.0/scopedcss/Pages/LocalExplorer/Suggestions.razor.rz.scp.css
+/Users/mac/Desktop/Projects/LocalExplorer/LocalExplorer_front/obj/Debug/net6.0/LocalExplorer_front.sourcelink.json
