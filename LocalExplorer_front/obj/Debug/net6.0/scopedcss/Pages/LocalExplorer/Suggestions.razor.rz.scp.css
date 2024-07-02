@@ -1,0 +1,73 @@
+.container[b-16q95izkof] {
+    display: flex;
+    background-color: #1262e3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info[b-16q95izkof], .activity-suggestions[b-16q95izkof] {
+    background-color: #aae7c4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+
+    .weather-info h1[b-16q95izkof], .activity-suggestions h2[b-16q95izkof] {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .weather-info p[b-16q95izkof], .activity-suggestions p[b-16q95izkof] {
+        font-size: 18px;
+    }
+
+.weather-icon img[b-16q95izkof] {
+    width: 50px;
+    height: 50px;
+}
+
+.swiper-container[b-16q95izkof] {
+    width: 300px;
+    height: 400px;
+}
+
+.card[b-16q95izkof] {
+    background-color: #0080ff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .card:nth-child(2)[b-16q95izkof] {
+        background-color: #ff8000;
+    }
+
+    .card:nth-child(3)[b-16q95izkof] {
+        background-color: #00ff80;
+    }
+
+    .card:nth-child(4)[b-16q95izkof] {
+        background-color: #8000ff;
+    }
+
+    .card:nth-child(5)[b-16q95izkof] {
+        background-color: #ff0080;
+    }
+
+.activity-image img[b-16q95izkof] {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
